@@ -10,6 +10,7 @@ function NavBar({user, setUser}){
 
     return(
         <nav>
+            <h1>Metabook</h1>
             <h2>Welcome {user.name}</h2>
             &nbsp;
             <Link to={'/posts'}>All Posts</Link>
