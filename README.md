@@ -1,3 +1,13 @@
+# About
+
+Social Media App utilizing MERN stack
+
+# Dependencies
+
+bcrypt, dotenv, express, jsonwebtoken, mongoose, morgan, react, react-router-dom
+
+[https://trello.com/b/oonMKLDm/mern](Link to Trello Board)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
