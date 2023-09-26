@@ -6,7 +6,7 @@ Social Media App utilizing MERN stack
 
 bcrypt, dotenv, express, jsonwebtoken, mongoose, morgan, react, react-router-dom
 
-#Trello Board
+# Trello Board
 
 [https://trello.com/b/oonMKLDm/mern](Link to Trello Board)
 
