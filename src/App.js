@@ -1,6 +1,6 @@
 import "./App.css";
 import { useState } from "react";
-import NewOrderPage from "./pages/NewOrderPage";
+import NewPostPage from "./pages/NewPostPage";
 import AuthPage from "./pages/AuthPage";
 import OrderHistoryPage from "./pages/OrderHistoryPage";
 import { Route, Routes } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
         <>
         <NavBar user={user} setUser={setUser}/>
         <Routes>
-          <Route path='posts/new' element={<NewOrderPage/>}/>
+          <Route path='posts/new' element={<NewPostPage/>}/>
           <Route path='posts' element={<OrderHistoryPage/>}/>
         </Routes>
         </>
