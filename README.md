@@ -13,6 +13,9 @@ bcrypt, dotenv, express, jsonwebtoken, mongoose, morgan, react, react-router-dom
 # Entity Relational Diagram
 ![ERD](./erd.png)
 
+# App Flow
+![Mern Flow](./fn2hls82.bmp)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
