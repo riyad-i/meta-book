@@ -11,7 +11,7 @@ bcrypt, dotenv, express, jsonwebtoken, mongoose, morgan, react, react-router-dom
 [https://trello.com/b/oonMKLDm/mern](Link to Trello Board)
 
 #Entity Relational Diagram
-[ERD](./erd.png)
+![ERD](./erd.png)
 
 # Getting Started with Create React App
 
