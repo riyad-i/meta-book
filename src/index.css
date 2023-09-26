@@ -15,11 +15,11 @@ code {
 /* CSS Custom Properties */
 :root {
   --white: #FFFFFF;
-  --tan-1: #FBF9F6;
-  --tan-2: #E7E2DD;
-  --tan-3: #E2D9D1;
-  --tan-4: #D3C1AE;
-  --orange: #F67F00;
+  --tan-1: #5e78ce;
+  --tan-2: #4f90bb;
+  --tan-3: #2565ad;
+  --tan-4: #5275aa;
+  --orange: #7f6bd6;
   --text-light: #968c84;
   --text-dark: #615954;
 }
