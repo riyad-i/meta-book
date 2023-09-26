@@ -21,6 +21,7 @@ async function index(req, res) {
 
 async function remove(req,res){
     try {
+        console.log(req.params)
         const post = await Post.findByIdAndDelete(req.params.id)
         res.json(post)
     } catch (error) {

@@ -27,6 +27,18 @@ export async function getPost(id){
     }
 }
 
+export async function deletePost(id){
+
+    const res = await fetch(BASE_URL + `/${id}`, {
+        method: 'delete',
+        headers: {'Content-Type': 'application/json'},
+    })
+    if (res.ok){
+        return await res.json()
+    }else{
+        throw new Error("Couldn't get Post")
+    }
+}
 
 
 

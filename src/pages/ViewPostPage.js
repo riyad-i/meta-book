@@ -16,6 +16,11 @@ export default function ViewPostPage() {
     })();
   }, []);
 
+  const remove = async () => {
+    const deleted = await postsService.deletePost(post._id)
+    console.log(deleted);
+  }
+
   return (
     <div>
         { post ? 
@@ -23,6 +28,7 @@ export default function ViewPostPage() {
         <h2>{post.title}</h2>
         <h4>{post.author}</h4>
         <h5>{post.body}</h5>
+        <button onClick={remove}>Delete</button>
         </>
     : null}
 

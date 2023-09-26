@@ -13,6 +13,12 @@ export async function getPost(id){
     return post
 }
 
+export async function deletePost(id){
+    const post = await postsAPI.deletePost(id)
+    console.log(post);
+    return post
+}
+
 
 
 export async function createPost(postFormData){
