@@ -12,9 +12,9 @@ function NavBar({user, setUser}){
         <nav>
             <h2>Welcome {user.name}</h2>
             &nbsp;
-            <Link to={'/orders'}>Order History</Link>
+            <Link to={'/orders'}>All Posts</Link>
             &nbsp; | &nbsp;
-            <Link to={'orders/new'}>New Order</Link>
+            <Link to={'orders/new'}>New Post</Link>
             &nbsp; | &nbsp;
             <Link to='' onClick={handleLogout}>Log Out</Link>
             &nbsp; | &nbsp;
