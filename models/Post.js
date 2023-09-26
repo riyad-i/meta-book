@@ -25,6 +25,12 @@ const postSchema = new mongoose.Schema({
         minLength: 1,
         maxLength: 50
     },
+    email: {
+        type: String,
+        required: true,
+        minLength: 1,
+        maxLength: 50
+    },
     likes: {
         type: Number,
         default: 0
