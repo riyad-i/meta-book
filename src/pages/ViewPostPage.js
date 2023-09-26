@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import * as postsService from "../utilities/posts-service";
+import { Link } from "react-router-dom";
 
 export default function ViewPostPage() {
   const params = useParams();
@@ -21,6 +22,10 @@ export default function ViewPostPage() {
     console.log(deleted);
   }
 
+//   const edit =  () => {
+    
+//   }
+
   return (
     <div>
         { post ? 
@@ -29,6 +34,8 @@ export default function ViewPostPage() {
         <h4>{post.author}</h4>
         <h5>{post.body}</h5>
         <button onClick={remove}>Delete</button>
+        {/* <button onClick={edit}>Edit</button> */}
+        <Link to={`posts/${post._id}`}>Edit</Link>
         </>
     : null}
 

@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import { getUser } from "./utilities/users-service";
 import { getPosts } from "./utilities/posts-service";
 import ViewPostPage from './pages/ViewPostPage'
+import Weather from "./pages/Weather";
 
 
 
@@ -27,6 +28,7 @@ function App() {
           {/* view route */}
           <Route path='posts/:id' element={<ViewPostPage />}/>
           <Route path='posts' element={<AllPostsPage />}/>
+          <Route path='weather' element={<Weather />}/>
         </Routes>
         </>
       ) : <AuthPage setUser={setUser}/>}

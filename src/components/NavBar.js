@@ -17,8 +17,9 @@ function NavBar({user, setUser}){
             &nbsp; | &nbsp;
             <Link to={'posts/new'}>New Post</Link>
             &nbsp; | &nbsp;
+            <Link to={'weather'}>Weather</Link>
+            &nbsp; | &nbsp;
             <Link to='' onClick={handleLogout}>Log Out</Link>
-            {/* &nbsp; | &nbsp; */}
             {/* <Link >Edit</Link> */}
             
         </nav>
