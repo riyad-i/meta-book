@@ -2,7 +2,7 @@ import "./App.css";
 import { useState } from "react";
 import NewPostPage from "./pages/NewPostPage";
 import AuthPage from "./pages/AuthPage";
-import OrderHistoryPage from "./pages/OrderHistoryPage";
+import AllPostsPage from "./pages/AllPostsPage";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import { getUser } from "./utilities/users-service";
@@ -19,7 +19,7 @@ function App() {
         <NavBar user={user} setUser={setUser}/>
         <Routes>
           <Route path='posts/new' element={<NewPostPage/>}/>
-          <Route path='posts' element={<OrderHistoryPage/>}/>
+          <Route path='posts' element={<AllPostsPage/>}/>
         </Routes>
         </>
       ) : <AuthPage setUser={setUser}/>}
