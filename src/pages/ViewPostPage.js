@@ -35,7 +35,7 @@ export default function ViewPostPage() {
         <h5>{post.body}</h5>
         <button onClick={remove}>Delete</button>
         {/* <button onClick={edit}>Edit</button> */}
-        <Link to={`posts/${post._id}`}>Edit</Link>
+        <Link to={`../${post._id}`}>Edit</Link>
         </>
     : null}
 

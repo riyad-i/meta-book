@@ -19,6 +19,13 @@ export async function deletePost(id){
     return post
 }
 
+export async function editPost(id){
+    const post = await postsAPI.editPost(id)
+    console.log(post);
+    return post
+}
+
+
 
 
 export async function createPost(postFormData){

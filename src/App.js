@@ -9,7 +9,7 @@ import { getUser } from "./utilities/users-service";
 import { getPosts } from "./utilities/posts-service";
 import ViewPostPage from './pages/ViewPostPage'
 import Weather from "./pages/Weather";
-
+import Edit from './pages/Edit';
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
           <Route path='posts/:id' element={<ViewPostPage />}/>
           <Route path='posts' element={<AllPostsPage />}/>
           <Route path='weather' element={<Weather />}/>
+          <Route path=':id' element={< Edit/>}/>
         </Routes>
         </>
       ) : <AuthPage setUser={setUser}/>}

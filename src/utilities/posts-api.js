@@ -57,6 +57,21 @@ export async function createPost(postFormData){
 }
 
 
+export async function editPost(postFormData){
+
+    const res = await fetch(BASE_URL, {
+        method: 'put',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(postFormData)
+    })
+    if (res.ok){
+        return await res.json()
+    }else{
+        throw new Error("Couldn't create Post")
+    }
+}
+
+
 
 
 
