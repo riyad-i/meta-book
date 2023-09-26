@@ -30,6 +30,7 @@ function AllPostsPage(){
                             <h2>{post.title}</h2>
                             <h5>{post.author}</h5>
                             <h5>{post.body}</h5>
+                            <br/>
                         </div>
                     )
                 })
