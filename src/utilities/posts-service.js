@@ -6,6 +6,15 @@ export async function getPosts(){
     return posts
 }
 
+
+export async function getPost(){
+    const post = await postsAPI.getPost()
+    console.log(post);
+    return post
+}
+
+
+
 export async function createPost(postFormData){
     const post = await postsAPI.createPost(postFormData)
     console.log(post);

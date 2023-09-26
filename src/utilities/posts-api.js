@@ -14,6 +14,22 @@ export async function getPosts(){
     }
 }
 
+export async function getPost(){
+
+    const res = await fetch(BASE_URL, {
+        method: 'get',
+        headers: {'Content-Type': 'application/json'},
+    })
+    if (res.ok){
+        return await res.json()
+    }else{
+        throw new Error("Couldn't get Posts")
+    }
+}
+
+
+
+
 export async function createPost(postFormData){
 
     const res = await fetch(BASE_URL, {

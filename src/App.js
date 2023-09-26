@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import { getUser } from "./utilities/users-service";
 import { getPosts } from "./utilities/posts-service";
+import ViewPostPage from './pages/ViewPostPage'
 
 
 
@@ -22,6 +23,9 @@ function App() {
         <Routes>
           <Route path='posts/new' element={<NewPostPage/>}/>
           {/* <Route path='posts' element={<AllPostsPage posts={posts} />}/> */}
+
+          {/* view route */}
+          <Route path='posts/:id' element={<ViewPostPage />}/>
           <Route path='posts' element={<AllPostsPage />}/>
         </Routes>
         </>
