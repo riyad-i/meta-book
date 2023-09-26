@@ -5,5 +5,8 @@ const postsCtrl = require('../../controllers/api/posts');
 // GET /api/posts
 router.get('/', postsCtrl.index);
 
+//new
+router.post('/', postsCtrl.create);
+
 
 module.exports = router
