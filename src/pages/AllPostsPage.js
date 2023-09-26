@@ -16,8 +16,8 @@ function AllPostsPage(){
 
     useEffect(() => {
         (async () => {
-            const users = await postsService.getPosts();
-            setPosts(users);
+            const posts = await postsService.getPosts();
+            setPosts(posts);
           })()
     }, [])
 

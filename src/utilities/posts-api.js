@@ -14,16 +14,16 @@ export async function getPosts(){
     }
 }
 
-export async function getPost(){
+export async function getPost(id){
 
-    const res = await fetch(BASE_URL, {
+    const res = await fetch(BASE_URL + `/${id}`, {
         method: 'get',
         headers: {'Content-Type': 'application/json'},
     })
     if (res.ok){
         return await res.json()
     }else{
-        throw new Error("Couldn't get Posts")
+        throw new Error("Couldn't get Post")
     }
 }
 
@@ -40,7 +40,7 @@ export async function createPost(postFormData){
     if (res.ok){
         return await res.json()
     }else{
-        throw new Error("Couldn't get Posts")
+        throw new Error("Couldn't create Post")
     }
 }
 

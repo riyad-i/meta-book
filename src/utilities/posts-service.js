@@ -7,8 +7,8 @@ export async function getPosts(){
 }
 
 
-export async function getPost(){
-    const post = await postsAPI.getPost()
+export async function getPost(id){
+    const post = await postsAPI.getPost(id)
     console.log(post);
     return post
 }
