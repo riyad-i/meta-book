@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import { createPost } from "../utilities/posts-api"
 
 function NewPostPage(){
     const [formData, setFormData] = useState({
@@ -20,19 +20,19 @@ function NewPostPage(){
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        // try {
-        //     const postFormData = {...formData}
-        //     console.log(postFormData);
+        try {
+            const postFormData = {...formData}
+            console.log(postFormData);
             
-        //     const post = await createPost(postFormData)
-        //     console.log(post);
-        // } catch (err) {
-        //     console.log(err);
-        //     setFormData({
-        //         ...formData,
-        //         error: 'Post Failed - Try Again'
-        //     })
-        // }
+            const post = await createPost(postFormData)
+            console.log(post);
+        } catch (err) {
+            console.log(err);
+            setFormData({
+                ...formData,
+                error: 'Post Failed - Try Again'
+            })
+        }
     }
 
     return(
