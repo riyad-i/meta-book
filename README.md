@@ -6,7 +6,12 @@ Social Media App utilizing MERN stack
 
 bcrypt, dotenv, express, jsonwebtoken, mongoose, morgan, react, react-router-dom
 
+# Trello Board
+
 [https://trello.com/b/oonMKLDm/mern](Link to Trello Board)
+
+# Entity Relational Diagram
+![ERD](./erd.png)
 
 # Getting Started with Create React App
 
