@@ -19,8 +19,8 @@ export async function deletePost(id){
     return post
 }
 
-export async function editPost(id){
-    const post = await postsAPI.editPost(id)
+export async function editPost(postFormData){
+    const post = await postsAPI.editPost(postFormData)
     console.log(post);
     return post
 }

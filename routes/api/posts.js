@@ -17,4 +17,8 @@ router.get('/:id', postsCtrl.view)
 //delete
 router.delete('/:id', postsCtrl.remove)
 
+
+//edit
+// router.put('/:id', postsCtrl.edit)
+
 module.exports = router
