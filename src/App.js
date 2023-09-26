@@ -18,8 +18,8 @@ function App() {
         <>
         <NavBar user={user} setUser={setUser}/>
         <Routes>
-          <Route path='orders/new' element={<NewOrderPage/>}/>
-          <Route path='orders' element={<OrderHistoryPage/>}/>
+          <Route path='posts/new' element={<NewOrderPage/>}/>
+          <Route path='posts' element={<OrderHistoryPage/>}/>
         </Routes>
         </>
       ) : <AuthPage setUser={setUser}/>}
