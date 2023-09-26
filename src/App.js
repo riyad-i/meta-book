@@ -6,11 +6,13 @@ import AllPostsPage from "./pages/AllPostsPage";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import { getUser } from "./utilities/users-service";
+import { getPosts } from "./utilities/posts-service";
 
 
 
 function App() {
   const [user, setUser] = useState(getUser());
+  // const [posts, setPosts] = useState(getPosts())
   // console.log(user);
   return (
     <main className="App">
@@ -19,7 +21,8 @@ function App() {
         <NavBar user={user} setUser={setUser}/>
         <Routes>
           <Route path='posts/new' element={<NewPostPage/>}/>
-          <Route path='posts' element={<AllPostsPage/>}/>
+          {/* <Route path='posts' element={<AllPostsPage posts={posts} />}/> */}
+          <Route path='posts' element={<AllPostsPage />}/>
         </Routes>
         </>
       ) : <AuthPage setUser={setUser}/>}

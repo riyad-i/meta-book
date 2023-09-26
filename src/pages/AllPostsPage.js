@@ -1,5 +1,7 @@
 import * as usersService from '../utilities/users-service'
 import { useState } from 'react';
+import * as postsService from '../utilities/posts-service'
+import { useEffect } from 'react';
 
 function AllPostsPage(){
     // const [expDate, setExpDate] = useState(null)
@@ -9,9 +11,29 @@ function AllPostsPage(){
     //     console.log(expDate);
     //     setExpDate(expDate.toString())
     // }
+    const [posts, setPosts] = useState(null)
+
+    useEffect(() => {
+        (async () => {
+            const users = await postsService.getPosts();
+            setPosts(users);
+          })()
+    }, [])
+
     return(
         <div>
             <h1>All Posts</h1>
+            {posts ? 
+                posts.map(post => {
+                    return(
+                        <div>
+                            <h2>{post.title}</h2>
+                            <h5>{post.author}</h5>
+                            <h5>{post.body}</h5>
+                        </div>
+                    )
+                })
+            : null}
             {/* <button onClick={handleCheckToken}>Check when my login expires</button>
             <h3>{expDate}</h3> */}
         </div>
