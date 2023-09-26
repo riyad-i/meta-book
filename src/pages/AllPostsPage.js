@@ -2,6 +2,7 @@ import * as usersService from '../utilities/users-service'
 import { useState } from 'react';
 import * as postsService from '../utilities/posts-service'
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function AllPostsPage(){
     // const [expDate, setExpDate] = useState(null)
@@ -20,6 +21,10 @@ function AllPostsPage(){
           })()
     }, [])
 
+    // const remove= async ()=> {
+
+    // }
+
     return(
         <div>
             <h1>All Posts</h1>
@@ -31,6 +36,8 @@ function AllPostsPage(){
                             <h2>{post.title}</h2>
                             <h4>{post.author}</h4>
                             <h5>{post.body}</h5>
+                            <Link to={`/api/posts/:${post._id}`} >View</Link>
+                            {/* <button onClick={remove}>Delete</button> */}
                             <br/>
                             <br/>
                         </div>
