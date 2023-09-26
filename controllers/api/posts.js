@@ -10,9 +10,16 @@ async function create(req,res){
     }
 }
 
-
-
+async function index(req, res) {
+    try{
+      const posts = await Post.find({})
+      res.status(200).json(posts);
+    }catch(e){
+      res.status(400).json({ msg: e.message });
+    }
+}
 
 module.exports = {
-    create
+    create,
+    index
 }
