@@ -4,3 +4,6 @@ const postsCtrl = require('../../controllers/api/posts');
 
 // GET /api/posts
 router.get('/', postsCtrl.index);
+
+
+module.exports = router
