@@ -23,13 +23,15 @@ function AllPostsPage(){
     return(
         <div>
             <h1>All Posts</h1>
+            <br/>
             {posts ? 
                 posts.map(post => {
                     return(
                         <div>
                             <h2>{post.title}</h2>
-                            <h5>{post.author}</h5>
+                            <h4>{post.author}</h4>
                             <h5>{post.body}</h5>
+                            <br/>
                             <br/>
                         </div>
                     )
