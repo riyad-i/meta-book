@@ -11,6 +11,9 @@ router.post('/', postsCtrl.create);
 //edit
 // router.get('/:id', postsCtrl.edit)
 
+//view
+router.get('/:id', postsCtrl.view)
+
 //delete
 router.delete('/:id', postsCtrl.remove)
 

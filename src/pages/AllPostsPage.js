@@ -36,7 +36,7 @@ function AllPostsPage(){
                             <h2>{post.title}</h2>
                             <h4>{post.author}</h4>
                             <h5>{post.body}</h5>
-                            <Link to={`/api/posts/:${post._id}`} >View</Link>
+                            <Link to={`/api/posts/${post._id}`} >View</Link>
                             {/* <button onClick={remove}>Delete</button> */}
                             <br/>
                             <br/>
